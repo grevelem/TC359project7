@@ -1,0 +1,13 @@
+body {
+	background: green; 
+	text-align:center;
+	}
+p {
+	font-family: georgia;
+	color: white;
+	font-size: 20px;
+}
+img{
+	height: 350px;
+	width: 300px;
+}
