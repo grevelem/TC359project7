@@ -1,8 +1,8 @@
 # app.rb
-require 'sinatra'
+  require 'sinatra'
 
-class MyWebApp < Sinatra::Base
-	get "/" do
-		send_file "views/index#{ rand(3) + 1}.html"
-	end
-end
+  class MyWebApp < Sinatra::Base
+	  get '/' do
+		  erb :"index#{ rand(3) + 1 }"
+	  end
+  end
