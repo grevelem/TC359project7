@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+            <title>Holiday Calendar</title>
+            <link rel="stylesheet" href="css/style.css">
+    </head>
+	<body>
+        <h1>Holiday Calendar</h1>
+		<h2>This Month's Holidays:</h2>
+    	<% @holiday.each do |holidays| %>
+    		<ul>Event: <%= holidays[0]["name"] %>, <%= holidays[0]["country"] %>, Date: <%= holidays[0]["date"] %> </ul>
+    	<% end %>
+
+    	<h2>February 1994 Holidays:</h2>
+    	<% @bday_holiday.each do |holidays| %>
+    		<ul>Event: <%= holidays[0]["name"] %>, <%= holidays[0]["country"] %>, Date: <%= holidays[0]["date"] %> </ul>
+    	<% end %>
+	</body>
+</html>

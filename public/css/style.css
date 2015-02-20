@@ -1,23 +1,28 @@
-p {
+body{
+	background: #00004C;
+}
+h1{
+	color: #fff;
+	text-align:center;
 	font-family: georgia;
-	color: black;
-	font-size: 20px;
+	font-size: 30px;
+	background: #007A99;
+	padding-top:20px;
+	padding-bottom: 20px;
+	border-radius: 35px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
-img{
-	height: 350px;
-	width: 300px;
+h2{
+	color: #fff;
+	font-family:georgia;
+	font-size:24px;
+	padding-left: 40px;
 }
-.container{
-	background: #006633;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-left: 20px;
-	padding-right: 20px
-}
-.col-lg-6{
-	text-align: center;
-}
-.col-md-6{
-	text-align: center;
-
+ul{
+	text-align:left;
+	font-family: georgia;
+	color: #007A99;
+	font-size: 18px;
+	float: center;
 }
