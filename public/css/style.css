@@ -18,6 +18,11 @@ h2{
 	font-family:georgia;
 	font-size:24px;
 	padding-left: 40px;
+	background: #007A99;
+	padding:10px;
+	border-radius:35px;
+	margin-left: 200px;
+	margin-right: 200px;
 }
 ul{
 	text-align:left;
@@ -25,4 +30,24 @@ ul{
 	color: #007A99;
 	font-size: 18px;
 	float: center;
+}
+li{
+	list-style-type:none;
+	text-align: left;
+}
+button{
+	background: #007A99;
+	font-family: georgia;
+	color: #fff;
+	border-style: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 24px;
+	border-style: solid;
+}
+.form-group{
+	position:inline;
+}
+.results{
+	text-align:center;
 }
