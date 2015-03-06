@@ -39,10 +39,10 @@
         <div class="results">
                 <h2>Results</h2>
                     <% @holiday.each do |holidays| %>
-                <ul>
-                    <%= holidays[0]["name"] %>, <%= holidays[0]["country"] %>, <%= holidays[0]["date"] %>
-                </ul>
-            <% end %>
+                        <ul>
+                            <%= holidays[0]["name"] %>, <%= holidays[0]["country"] %>, <%= holidays[0]["date"] %>
+                        </ul>
+                <% end %>
         </div>
 	</body>
 </html>
