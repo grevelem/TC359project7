@@ -1,51 +1,51 @@
 <!doctype html>
 <html>
-    <head>
-            <title>Holiday Calendar</title>
-            <link rel="stylesheet" href="css/style.css">
-    </head>
-  <body>
-        <h1>Holiday Calendar Form</h1>
-        <form>
-            <ul>
-            <div class="form-group">
-                <li>
-                    <label for="month">Month (1-12): </label>
-                    <input name="month" value="<%= params[:month] %>" type="number" class="form-control" required>
-                </li>
-            </div>
-        <br>
-            <div class="form-group">
-                <li>
-                    <label for="year">Year (XXXX): </label>
-                    <input name="year" value="<%= params[:year] %>" type="number" class="form-control" required>
-                 </li>
-            </div>
-        <br>
-             <div class="form-group">
-                <li>
-                    <label for="country">Country:</label>
-                    <select name="country" class="form-control">
-                            <% %w(US GB).each do |country| %>
-                            <option value="<%= country %>" <%= 'selected="selected"' if params[:country] == country %>><%= country %></option>
-                            <% end %>
-                    </select>
-                </li>
-            </div>
-        <br>
-            <button type="submit">Click for Holidays!</button>
-            </ul>
-        </form>
-        <div class="results">
-                <h2>Results</h2>
-                    <% @holiday.each do |holidays| %>
-                        <ul>
-                            <%= holidays[0]["name"] %>, <%= holidays[0]["country"] %>, <%= holidays[0]["date"] %>
-                        </ul>
-                    <% end %>
-        </div>
-  </body>
+<head>
+  <title>Holiday Calendar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Holiday Calendar Form</h1>
+  <form>
+    <ul>
+      <div class="form-group">
+        <li>
+          <label for="month">Month (1-12): </label>
+          <input name="month" value="<%= params[:month] %>" type="number" class="form-control" required>
+        </li>
+      </div>
+      <br>
+      <div class="form-group">
+        <li>
+          <label for="year">Year (XXXX): </label>
+          <input name="year" value="<%= params[:year] %>" type="number" class="form-control" required>
+        </li>
+      </div>
+      <br>
+      <div class="form-group">
+        <li>
+          <label for="country">Country:</label>
+          <select name="country" class="form-control">
+            <% %w(US GB).each do |country| %>
+            <option value="<%= country %>" <%= 'selected="selected"' if params[:country] == country %>><%= country %></option>
+            <% end %>
+          </select>
+        </li>
+      </div>
+      <br>
+      <button type="submit">Click for Holidays!</button>
+    </ul>
+  </form>
+  <div class="results">
+    <h2>Results</h2>
+    <% @holiday.each do |holidays| %>
+    <ul>
+      <%= holidays[0]["name"] %>, <%= holidays[0]["country"] %>, <%= holidays[0]["date"] %>
+    </ul>
+    <% end %>
+  </div>
+</body>
 </html>
 
 
-                    
+
