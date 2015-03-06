@@ -25,9 +25,9 @@
              <div class="form-group">
                 <li>
                     <label for="country">Country:</label>
-                        <select name="country" class="form-control">
+                    <select name="country" class="form-control">
                             <% %w(US GB).each do |country| %>
-                                <option value="<%= country %>" <%= 'selected="selected"' if params[:country] == country %>><%= country %></option>
+                            <option value="<%= country %>" <%= 'selected="selected"' if params[:country] == country %>><%= country %></option>
                             <% end %>
                     </select>
                 </li>
@@ -38,8 +38,10 @@
         </form>
         <div class="results">
                 <h2>Results</h2>
-                <% @holiday.each do |holidays| %>
-                <ul><%= holidays[0]["name"] %>, <%= holidays[0]["country"] %>, <%= holidays[0]["date"] %></ul>
+                    <% @holiday.each do |holidays| %>
+                <ul>
+                    <%= holidays[0]["name"] %>, <%= holidays[0]["country"] %>, <%= holidays[0]["date"] %>
+                </ul>
             <% end %>
         </div>
 	</body>
